@@ -1,0 +1,57 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Pages: 1
+%%BoundingBox: 0 0 16 10
+
+/bg {
+newpath moveto
+16 0 rlineto
+0 -10 rlineto
+-16 0 rlineto
+closepath
+} def
+
+/inner {
+newpath
+moveto
+5 0 rlineto
+0 -4 rlineto
+-5 0 rlineto
+closepath
+} def
+
+/outer {
+newpath
+moveto
+9 0 rlineto
+0 -4 rlineto
+-9 0 rlineto
+closepath
+} def
+
+/fill_yellow {
+%1 .8 0 setrgbcolor
+0 .2 1 0 setcmykcolor
+fill
+} def
+
+/fill_blue {
+%0 .5 .9 setrgbcolor
+1 .5 .1 0 setcmykcolor
+fill
+} def
+
+
+%5 5 translate
+%50 50 scale
+%90 rotate
+0 0 bg
+fill_yellow
+0 0 inner
+fill_blue
+0 -6 inner
+fill_blue
+7 0 outer
+fill_blue
+7 -6 outer
+fill_blue
+%showpage
