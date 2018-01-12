@@ -64,10 +64,10 @@ class Week:
 
 
 class Day:
-	def __init__(self, weekday, date):
-		self.weekday = weekday
+	def __init__(self, date):
 		self.date = date
 		self.events = []
+		self.appearance = []
 
 	def add_event(self, new_event, append=False):
 		if append:
